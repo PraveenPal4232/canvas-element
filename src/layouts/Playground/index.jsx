@@ -1,10 +1,11 @@
 import React from "react";
+import CustomStage from "../../constants/Stage";
 
 export default function Playground() {
   return (
     <div className="playground">
-      <div class="playground_warp">
-        <h1>Playground</h1>
+      <div className="playground_warp">
+        <CustomStage />
       </div>
     </div>
   );
