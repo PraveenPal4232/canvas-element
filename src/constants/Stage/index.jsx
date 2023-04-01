@@ -2,6 +2,7 @@ import React from "react";
 import { Stage, Layer, Rect, Text } from "react-konva";
 
 export default function CustomStage() {
+  console.log(window.innerWidth, window.innerHeight);
   return (
     <Stage width={window.innerWidth - 300} height={window.innerHeight}>
       <Layer>
@@ -10,8 +11,15 @@ export default function CustomStage() {
           y={0}
           width={window.innerWidth - 300}
           height={window.innerHeight}
-          fill="#333333"
+          fill="red"
           shadowBlur={10}
+        />
+        <Text
+          text="00"
+          fontSize={100}
+          fill="white"
+          x={(window.innerWidth - 300) / 2}
+          y={window.innerHeight / 2}
         />
       </Layer>
     </Stage>
