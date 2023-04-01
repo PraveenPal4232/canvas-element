@@ -13,3 +13,28 @@
   background-color: #111111;
   color: #888888;
 }
+.panel_warp{
+  padding: 1rem;
+}
+.panel_logo{
+  margin-bottom: 2rem;
+}
+.panel_logo a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.custom_select{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.custom_select_label{
+  font-size: 14px;
+  margin-right: 1rem;
+}
+.custom_select_input{
+  width: -webkit-fill-available;
+  color: #aaaaaa;
+  background-color: #222222;
+  padding: 5px;
+}

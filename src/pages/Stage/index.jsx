@@ -2,7 +2,7 @@ import React from "react";
 import { Stage, Layer, Rect, Text } from "react-konva";
 
 export default function CustomStage() {
-  console.log(window.innerWidth, window.innerHeight);
+  //  console.log(window.innerWidth, window.innerHeight);
   return (
     <Stage width={window.innerWidth - 300} height={window.innerHeight}>
       <Layer>

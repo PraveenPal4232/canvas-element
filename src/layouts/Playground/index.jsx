@@ -1,5 +1,5 @@
 import React from "react";
-import CustomStage from "../../constants/Stage";
+import CustomStage from "../../pages/Stage";
 
 export default function Playground() {
   return (
