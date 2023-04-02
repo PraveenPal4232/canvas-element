@@ -1,6 +1,10 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { mainState, updateColor } from "../../store/mainSlice";
 
 export default function Color(props) {
+  const { color } = useSelector(mainState);
+  const dispatch = useDispatch();
   return (
     <div className="custom_color">
       <label className="custom_color_label" htmlFor="color">
@@ -11,7 +15,8 @@ export default function Color(props) {
         type="color"
         id="color"
         name="color"
-        value="#e66465"
+        value={color}
+        onChange={(e) => dispatch(updateColor(e.target.value))}
       />
     </div>
   );

@@ -1,8 +1,10 @@
 import React from "react";
 import { Stage, Layer, Rect, Text } from "react-konva";
+import { useSelector } from "react-redux";
+import { mainState } from "../../store/mainSlice";
 
 export default function CustomStage() {
-  //  console.log(window.innerWidth, window.innerHeight);
+  const { number, color } = useSelector(mainState);
   return (
     <Stage width={window.innerWidth - 300} height={window.innerHeight}>
       <Layer>
@@ -11,11 +13,11 @@ export default function CustomStage() {
           y={0}
           width={window.innerWidth - 300}
           height={window.innerHeight}
-          fill="red"
+          fill={color}
           shadowBlur={10}
         />
         <Text
-          text="00"
+          text={number}
           fontSize={100}
           fill="white"
           x={(window.innerWidth - 300) / 2}
