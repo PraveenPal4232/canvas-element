@@ -12,6 +12,7 @@
   height: 100vh;
   background-color: #111111;
   color: #888888;
+  border: 5px solid #222222;
 }
 .panel_warp{
   padding: 1rem;
@@ -35,6 +36,7 @@
 .custom_color_label{
   font-size: 14px;
   margin-right: 1rem;
+  min-width: 55px;
 }
 .custom_select_input,
 .custom_number_imput,

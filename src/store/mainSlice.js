@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   number: 10,
-  color: "#cccccc",
+  color: "#333333",
 };
 
 export const mainSlice = createSlice({
