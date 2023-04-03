@@ -41,7 +41,8 @@ export default function CustomStage() {
           y={(size.height - 100) / 2}
           onMouseEnter={(e) => {
             const container = e.target.getStage().container();
-            container.style.cursor = "url(public/cursor.png), auto";
+            container.style.cursor =
+              "url(https://raw.githubusercontent.com/PraveenPal4232/canvas-element/main/public/cursor-small.png), auto";
           }}
           onMouseLeave={(e) => {
             const container = e.target.getStage().container();
