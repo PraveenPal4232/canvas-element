@@ -1,5 +1,5 @@
 import React from "react";
-import Select from "../../components/Select";
+// import Select from "../../components/Select";
 import { background } from "../../constants/index";
 import Number from "../../components/Number";
 import Color from "../../components/Color";
